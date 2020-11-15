@@ -5,7 +5,7 @@ body {
     margin:0px;
     background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("cabin2.jpg") center center;
     background-size:cover;
-    width:100vw;
+    width:100vh;
     height:100vh;
     overflow:hidden;
     font-family: 'Josefin Sans', sans-serif;
@@ -107,7 +107,7 @@ body {
     text-align:center;
     font-size:25px;
     transform:rotate(90deg);
-    background:transparent;
+    background: transparent;
     color:#fff;
     position:fixed;
     right:0;
@@ -168,7 +168,7 @@ body {
     color:rgb(255, 50, 50);
 }
 .container {
-    width:90vw;
+    width:1000px;
     height:90vh;
     padding:5vh 5vw;
     background:rgb(255, 50, 50);
@@ -178,11 +178,6 @@ body {
     max-height:100vh;
     overflow-y:auto;
     display:none;
-}
-.container div {
-    font-size:25px;
-    margin:20px 0px;
-    transition:0.4s ease-in-out;
 }
 .container div:hover {
     cursor:pointer;
@@ -279,6 +274,39 @@ body {
 .container form textarea:focus {
     outline:none;
     border-bottom:3px solid rgba(255, 255, 255,1);
+}
+.heading h2
+{
+  text-align: center;
+}
+.services .content
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.services .content .servicesBox
+{
+  padding: 40px 20px;
+  max-width: 340px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.services .content .servicesBox:hover
+{
+  background: #BA55D3;
+}
+.services .content .servicesBox img
+{
+  max-width: 80px;
+  filter: invert(1);
+}
+.services .content .servicesBox h2
+{
+  font-size: 20px;
+  font-weight: 600;
 }
 ::placeholder {
     color:#fff;
